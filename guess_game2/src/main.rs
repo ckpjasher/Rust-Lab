@@ -1,10 +1,9 @@
 use std::io;
 
-// 题干二
-fn main() {
-    println!("Guess the number!");
 
-    println!("Please input your guess.");
+// 输入字符
+fn main() {
+    println!("输入字符！");
 
     let mut guess = String::new();
 
@@ -12,5 +11,5 @@ fn main() {
         .read_line(&mut guess)
         .expect("Failed to read line");
 
-    println!("You guessed: {guess}");
+    println!("你输入了: {guess}");
 }
